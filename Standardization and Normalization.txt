@@ -1,0 +1,18 @@
+
+******************************************************
+Normalization:
+1- Rescales the values into a range of or sometimes [-1, 1].
+2- Useful when there are no outliers as it cannot cope up with them.
+3- Used when algorithms don't make any assumptions about the distribution of the data.
+4- The new point is calculated as: X_new = (X - X_min)/(X_max - X_min).
+5- Geometrically speaking, transformation squishes the n-dimensional data into an n-dimensional unit hypercube.
+Example: Usually, we would scale age and not incomes because only a few people have high incomes but the age is close to uniform.
+
+******************************************************
+
+Standardization:
+1- Rescales data to have a mean of 0 and a standard deviation of 1 (unit variance).
+2- Does not get affected by outliers because there is no predefined range of transformed features.
+3- Used when algorithms create predictions about the data distribution.
+4- The transformation is done by subtracting the mean and then dividing by its standard deviation.
+Example: Standardization is an excellent tool to use when the data has a normal distribution. It can be utilized in a machine learning process when assumptions are made on the data distribution.
